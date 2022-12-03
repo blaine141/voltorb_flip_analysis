@@ -1,0 +1,10 @@
+results/*/
+logs/
+.vscode/
+__pycache__/
+voltorb_flip_env/build/
+voltorb_flip_env/voltorb_flip_env.egg-info
+voltorb_flip_env/fast_board_generator*
+voltorb_flip_env/voltorb_flip/__pycache__
+voltorb_flip_env/voltorb_flip/fast_board_generator.c
+voltorb_flip_env/voltorb_flip/envs/__pycache__

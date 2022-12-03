@@ -1,0 +1,1 @@
+from voltorb_flip.envs.environment import VoltorbFlipEnv # points to the location where the class that inherits from gym.Env can be found
