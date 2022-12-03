@@ -159,7 +159,7 @@ class VanillaPolicyGradient(LightningModule):
 
             action = self.get_action(self.state)
 
-            next_state, reward, done, _ = self.env.step(action[0])
+            next_state, reward, done, _ = self.env.step(action)
 
             self.episode_rewards.append(reward)
             self.batch_actions.append(action)
@@ -205,7 +205,7 @@ class VanillaPolicyGradient(LightningModule):
             # Non-deterministic action
             if not non_deterministic_done:
                 action = self.get_action(non_deterministic_state, deterministic=False)
-                non_deterministic_state, non_deterministic_reward, non_deterministic_done, _ = non_deterministic_env.step(action[0])
+                non_deterministic_state, non_deterministic_reward, non_deterministic_done, _ = non_deterministic_env.step(action)
 
             # Deterministic action
             if not deterministic_done:
